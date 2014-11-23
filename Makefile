@@ -1,7 +1,7 @@
 CC=g++
 CFLAGS=-c -Wall -std=c++14
-LDFLAGS=-lglfw
-SOURCES=main.cpp game.cpp glfw.cpp window.cpp
+LDFLAGS=-lglfw -lGLEW
+SOURCES=main.cpp game.cpp glfw.cpp window.cpp shader.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=bounce
 BUILD=build
